@@ -1,0 +1,71 @@
+[*] Building images for the first time.
+Step 1 : FROM library/debian:latest
+ ---> a604b236bcde
+Step 2 : COPY src /usr/src
+ ---> 70c864782ca3
+Removing intermediate container 5dac1fee571f
+Successfully built 70c864782ca3
+Sending build context to Docker daemon  5.12 kBSending build context to Docker daemon  5.12 kB
+Step 1 : FROM library/debian:latest
+ ---> a604b236bcde
+Step 2 : COPY src /usr/src
+ ---> 59a2b956452f
+Removing intermediate container 5f101df37fcd
+Successfully built 59a2b956452f
+
+[*] Changing some file.
+
+[*] Rebuilding with compose.
+Step 1 : FROM library/debian:latest
+ ---> a604b236bcde
+Step 2 : COPY src /usr/src
+ ---> 919e767cf895
+Removing intermediate container f6bad4af4d65
+Successfully built 919e767cf895
+
+[*] Rebuilding with docker build.
+Sending build context to Docker daemon  5.12 kBSending build context to Docker daemon  5.12 kB
+Step 1 : FROM library/debian:latest
+ ---> a604b236bcde
+Step 2 : COPY src /usr/src
+ ---> 38db64e6f075
+Removing intermediate container 930acb9c47d4
+Successfully built 38db64e6f075
+
+[*] Adding Dockerfile to .dockerignore.
+
+[*] Rebuilding with compose.
+Step 1 : FROM library/debian:latest
+ ---> a604b236bcde
+Step 2 : COPY src /usr/src
+ ---> a6ce554b1b50
+Removing intermediate container f491bd76a222
+Successfully built a6ce554b1b50
+
+[*] Rebuilding with docker build.
+Sending build context to Docker daemon 5.632 kBSending build context to Docker daemon 5.632 kB
+Step 1 : FROM library/debian:latest
+ ---> a604b236bcde
+Step 2 : COPY src /usr/src
+ ---> Using cache
+ ---> 38db64e6f075
+Successfully built 38db64e6f075
+
+[*] Changing some file.
+
+[*] Rebuilding with compose.
+Step 1 : FROM library/debian:latest
+ ---> a604b236bcde
+Step 2 : COPY src /usr/src
+ ---> Using cache
+ ---> a6ce554b1b50
+Successfully built a6ce554b1b50
+
+[*] Rebuilding with docker build.
+Sending build context to Docker daemon 5.632 kBSending build context to Docker daemon 5.632 kB
+Step 1 : FROM library/debian:latest
+ ---> a604b236bcde
+Step 2 : COPY src /usr/src
+ ---> 37600a289324
+Removing intermediate container 104319dd5016
+Successfully built 37600a289324
